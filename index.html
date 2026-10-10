@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kolkata Metro · Durga Puja 2026 Timetable</title>
+<meta name="description" content="Check Kolkata Metro special Durga Puja timings for Oct 15–21: Blue, Green, Yellow, Purple and Orange lines, with overnight services.">
+<meta name="theme-color" content="#0b1020">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚇</text></svg>">
+<style>
+:root{--bg:#0b1020;--card:#141b34;--card2:#1b2445;--fg:#eef1ff;--mut:#97a0c4;--line:#27315a;--accent:#ffb703;
+--Blue:#2f8bff;--Green:#22c55e;--Yellow:#facc15;--Purple:#a855f7;--Orange:#fb923c}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#26204f 0,transparent 60%),radial-gradient(900px 500px at -10% 10%,#102a55 0,transparent 55%),var(--bg);background-attachment:fixed;color:var(--fg);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.45;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+.wrap{max-width:1040px;margin:0 auto;padding:22px 16px 48px}
+header{text-align:center;padding:18px 0 10px}
+.tag{display:inline-block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);border:1px solid #ffb70355;padding:4px 12px;border-radius:99px}
+h1{font-size:clamp(1.7rem,5vw,2.8rem);margin:12px 0 6px;line-height:1.1;background:linear-gradient(90deg,#fff,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);margin:0}
+.clock{margin:14px auto 0;display:inline-flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:.85rem;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e;animation:p 1.6s infinite}
+@keyframes p{50%{opacity:.3}}
+.dates{display:flex;gap:8px;overflow-x:auto;padding:18px 2px 8px;scrollbar-width:none}
+.dates::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;min-width:78px;background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:14px;padding:9px 10px;text-align:center;cursor:pointer;font:inherit;transition:.18s}
+.chip b{display:block;font-size:1.25rem}
+.chip span{display:block;font-size:.68rem;color:var(--mut);margin-top:1px}
+.chip:hover{transform:translateY(-2px);border-color:var(--accent)}
+.chip.on{background:linear-gradient(160deg,#ffb703,#fb8500);color:#1a1200;border-color:transparent}
+.chip.on span{color:#3b2a00}
+.chip.today::after{content:"TODAY";display:block;font-size:.58rem;font-weight:700;margin-top:2px;opacity:.85}
+.banner{margin:12px 0 4px;padding:12px 16px;border-radius:14px;background:linear-gradient(90deg,#3b1d6e,#143a73);border:1px solid #4a56a8;font-size:.92rem}
+.banner.warn{background:#3a1f12;border-color:#8a4a22}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.f{background:transparent;border:1px solid var(--line);color:var(--mut);padding:6px 14px;border-radius:99px;cursor:pointer;font:inherit;font-size:.85rem}
+.f.on{color:var(--fg);border-color:var(--accent);background:#ffb70318}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));margin-top:12px}
+.card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:16px;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--c)}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.name{font-size:1.25rem;font-weight:800;color:var(--c)}
+.route{font-size:.8rem;color:var(--mut)}
+.badge{font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:99px;white-space:nowrap}
+.b-run{background:#22c55e22;color:#4ade80;border:1px solid #22c55e66}
+.b-soon{background:#facc1522;color:#fde047;border:1px solid #facc1566}
+.b-end{background:#ef444422;color:#f87171;border:1px solid #ef444466}
+.b-off{background:#ffffff10;color:var(--mut);border:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0 10px}
+.s{background:#0b102066;border-radius:12px;padding:9px 10px}
+.s small{display:block;color:var(--mut);font-size:.68rem;text-transform:uppercase;letter-spacing:.06em}
+.s b{font-size:1.02rem}
+.tl{position:relative;height:12px;background:#0b1020;border-radius:99px;margin-top:6px}
+.tl i{position:absolute;top:0;bottom:0;border-radius:99px;background:var(--c);opacity:.9}
+.tl u{position:absolute;top:-3px;bottom:-3px;width:2px;background:#fff;box-shadow:0 0 8px #fff}
+.ax{display:flex;justify-content:space-between;color:var(--mut);font-size:.65rem;margin-top:3px}
+ul{margin:10px 0 0;padding-left:18px;color:var(--mut);font-size:.84rem}
+li{margin:3px 0}
+li b{color:var(--fg)}
+.night{color:#c4b5fd;font-weight:600}
+.off{display:flex;align-items:center;gap:10px;margin-top:14px;color:var(--mut)}
+footer{margin-top:30px;text-align:center;color:var(--mut);font-size:.78rem}
+</style></head><body>
+<div class="wrap">
+<header>
+ <span class="tag">Durga Puja 2026 · Oct 15–21</span>
+ <h1>Kolkata Metro Special Timetable</h1>
+ <p class="sub">Pick a date and check every line's timings, frequency and last trains.</p>
+ <div class="clock"><span class="dot"></span><span id="clock">--</span></div>
+</header>
+<div class="dates" id="dates" role="tablist" aria-label="Choose date"></div>
+<div id="banner"></div>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+<footer>Based on the Kolkata Metro announcement as reported in the press. Timings may change; always confirm with Metro Railway Kolkata's official notices.<br>Unofficial info site.</footer>
+</div>
+<script>
+// ---------- DATA (edit here to update timings) ----------
+// times in minutes from midnight; past 1440 = after midnight (next day)
+const hm=(h,m=0)=>h*60+m;
+const LINES={
+ Blue:{route:"Dakshineswar ⇄ Shahid Khudiram",p:[
+  {d:[15,16],n:284,s:hm(6),e:hm(23),f:"6 min",notes:["First train: 6:00am from both ends","Last end-to-end: Dakshineswar→Shahid Khudiram <b>10:48pm</b>, Shahid Khudiram→Dakshineswar <b>10:50pm</b>","11:00pm: Dakshineswar→Mahanayak Uttam Kumar and Shahid Khudiram→Dum Dum"]},
+  {d:[17,18,19,20],n:248,s:hm(13),e:hm(28),f:"6 min",night:1,notes:["<span class='night'>🌙 Overnight service</span> – starts 1pm, last departures 4am next day","Last end-to-end: Dakshineswar→Shahid Khudiram <b>3:46am</b>, Shahid Khudiram→Dakshineswar <b>3:48am</b>","4:00am: Shahid Khudiram⇄Dum Dum and Dakshineswar⇄Mahanayak Uttam Kumar"]},
+  {d:[21],n:140,s:hm(13),e:hm(22,30),f:"8 min",notes:["Dashami: reduced service, 1pm to 10:30pm"]}]},
+ Green:{route:"Howrah Maidan ⇄ Salt Lake Sector V",p:[
+  {d:[15,16],n:240,s:hm(6),e:hm(23),f:"6 min",notes:["First train: Howrah Maidan 6:00am, Salt Lake Sector V 6:09am","Last trains from both ends: <b>11:00pm</b>"]},
+  {d:[17,18,19,20],n:192,s:hm(13,30),e:hm(27,59),f:"8 min",night:1,notes:["<span class='night'>🌙 Overnight service</span> – starts 1:30pm","Last train: Howrah Maidan <b>3:52am</b>, Salt Lake Sector V <b>3:59am</b>"]},
+  {d:[21],n:74,s:hm(13,30),e:hm(22,30),f:"15 min",notes:["Dashami: 1:30pm to 10:30pm at 15-minute intervals"]}]},
+ Yellow:{route:"Jai Hind Bimanbandar ⇄ Beleghata area",p:[
+  {d:[15,16],n:120,s:hm(7,18),e:hm(21,20),f:"12 min",notes:["Plus 5 direct services: Jai Hind Bimanbandar⇄Shahid Khudiram"]},
+  {d:[17,18,19,20],n:72,s:hm(15),e:hm(22,53),f:"12 min",notes:["Services from 3pm; last around 10:53pm"]},
+  {d:[21],n:62,s:hm(15),e:hm(21,38),f:"—",notes:["Dashami: 3pm to 9:38pm"]}]},
+ Purple:{route:"Joka ⇄ Majerhat",p:[
+  {d:[15,16],n:84,s:hm(6,40),e:hm(21,26),f:"21 min",notes:["First: Joka 6:40am, Majerhat 7:03am","Last: Joka <b>9:05pm</b>, Majerhat <b>9:26pm</b>"]},
+  {d:[17,18,19,20,21],n:38,s:hm(15),e:hm(22,55),f:"25 min",notes:["Same schedule Oct 17–21 including Dashami","3pm to 10:55pm"]}]},
+ Orange:{route:"Kavi Subhash ⇄ Beleghata",p:[
+  {d:[15,16],n:62,s:hm(7,40),e:hm(20,45),f:"25 min",notes:["First: Kavi Subhash 7:40am, Beleghata 8:10am","Last: Kavi Subhash <b>8:20pm</b>, Beleghata <b>8:45pm</b>"]},
+  {d:[17,18,19,20,21],none:1,notes:[]}]}
+};
+const DAYNAME={15:"Maha Panchami",16:"Maha Sasthi",17:"Maha Saptami",18:"Puja day",19:"Puja day",20:"Maha Navami",21:"Dashami"};
+const WK={15:"Thu",16:"Fri",17:"Sat",18:"Sun",19:"Mon",20:"Tue",21:"Wed"};
+const COLORS={Blue:"var(--Blue)",Green:"var(--Green)",Yellow:"var(--Yellow)",Purple:"var(--Purple)",Orange:"var(--Orange)"};
+// ---------- LOGIC ----------
+const fmt=m=>{m=m%1440;let h=Math.floor(m/60),mi=m%60,ap=h>=12?"pm":"am";h=h%12||12;return h+":"+String(mi).padStart(2,"0")+ap};
+function ist(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Kolkata",day:"numeric",month:"numeric",year:"numeric",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date()).reduce((a,x)=>(a[x.type]=+x.value,a),{});return p}
+function serviceDay(){ // returns {day, mins} in "service day" terms (before 5am counts as previous day's late night)
+ const n=ist();let valid=n.month===10&&n.year===2026;let mins=n.hour*60+n.minute,day=n.day;
+ if(!valid)return{day:null,mins};
+ if(mins<300){day-=1;mins+=1440}
+ return{day:(day>=15&&day<=21)?day:null,mins}}
+let sel=15,filter="All";
+const $=id=>document.getElementById(id);
+const sd0=serviceDay();if(sd0.day)sel=sd0.day;
+function renderDates(){const sd=serviceDay();$("dates").innerHTML=[15,16,17,18,19,20,21].map(d=>`<button class="chip ${d===sel?"on":""} ${d===sd.day?"today":""}" onclick="pick(${d})" role="tab"><b>${d}</b><span>${WK[d]} · Oct</span><span>${DAYNAME[d]}</span></button>`).join("")}
+function renderFilters(){const o=["All",...Object.keys(LINES)];$("filters").innerHTML=o.map(x=>`<button class="f ${x===filter?"on":""}" onclick="setF('${x}')">${x==="All"?"All lines":x}</button>`).join("")}
+function pick(d){sel=d;renderAll();}
+function setF(f){filter=f;renderFilters();renderCards()}
+function renderBanner(){
+ const nightLines=Object.entries(LINES).filter(([k,v])=>v.p.find(p=>p.d.includes(sel)&&p.night)).map(x=>x[0]);
+ let h="";
+ if(nightLines.length)h+=`<div class="banner">🌙 <b>Overnight service today:</b> ${nightLines.join(" & ")} line trains run until about 4am the next morning for pandal-hopping.</div>`;
+ if(sel>=17)h+=`<div class="banner warn">⚠️ <b>Orange Line is closed</b> from Oct 17 to Oct 21 (Saptami to Dashami).</div>`;
+ $("banner").innerHTML=h}
+function renderCards(){
+ const sd=serviceDay(),isToday=sd.day===sel;
+ const AX0=360,AX1=1680,span=AX1-AX0; // 6am to 4am
+ $("grid").innerHTML=Object.entries(LINES).filter(([k])=>filter==="All"||filter===k).map(([k,v])=>{
+  const p=v.p.find(x=>x.d.includes(sel));
+  if(p.none)return`<div class="card" style="--c:${COLORS[k]}"><div class="top"><div><div class="name">${k} Line</div><div class="route">${v.route}</div></div><span class="badge b-off">No service</span></div><div class="off">🚫 <span>No ${k} Line services on this date.</span></div></div>`;
+  let badge="";
+  if(isToday){const m=sd.mins;
+   if(m<p.s)badge=`<span class="badge b-soon">Starts at ${fmt(p.s)}</span>`;
+   else if(m<=p.e)badge=`<span class="badge b-run">● Running now</span>`;
+   else badge=`<span class="badge b-end">Service ended</span>`}
+  const L=(p.s-AX0)/span*100,W=(p.e-p.s)/span*100;
+  const nowPos=isToday&&sd.mins>=AX0&&sd.mins<=AX1?`<u style="left:${(sd.mins-AX0)/span*100}%"></u>`:"";
+  return`<div class="card" style="--c:${COLORS[k]}">
+   <div class="top"><div><div class="name">${k} Line</div><div class="route">${v.route}</div></div>${badge}</div>
+   <div class="stats"><div class="s"><small>First</small><b>${fmt(p.s)}</b></div><div class="s"><small>Last</small><b>${fmt(p.e)}${p.e>=1440?" ✦":""}</b></div><div class="s"><small>Every</small><b>${p.f}</b></div></div>
+   <div class="s" style="margin-bottom:2px"><small>Total services</small><b>${p.n}</b> <span style="color:var(--mut);font-size:.8rem">on this date</span></div>
+   <div class="tl"><i style="left:${L}%;width:${W}%"></i>${nowPos}</div>
+   <div class="ax"><span>6am</span><span>12pm</span><span>6pm</span><span>12am</span><span>4am</span></div>
+   <ul>${p.notes.map(n=>`<li>${n}</li>`).join("")}</ul></div>`}).join("")}
+function renderAll(){renderDates();renderFilters();renderBanner();renderCards()}
+function tick(){const n=ist();const p=x=>String(x).padStart(2,"0");$("clock").textContent=`Kolkata time ${p(n.hour)}:${p(n.minute)} · ${n.day}/${n.month}/${n.year}`}
+tick();setInterval(()=>{tick();renderDates();renderCards()},30000);
+renderAll();
+</script>
+</body></html>
